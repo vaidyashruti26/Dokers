@@ -42,7 +42,8 @@ def predict_note_authentication(Age,Weight,Height,BMI,Blood_Group,Pulse_rate,RR,
 
 
 
-def main():st.title("PCOS Prediction")
+def main():
+    st.title("PCOS Prediction")
     html_temp = """
     <div style="background-color:tomato;padding:10px">
     <h2 style="color:white;text-align:center;">Streamlit PCOS Prediction ML App </h2>
