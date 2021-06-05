@@ -23,6 +23,8 @@ import streamlit as st
 #app=Flask(__name__)
 #Swagger(app)
 
+from PIL import Image
+
 pickle_in = open("model.pkl","rb")
 model=pickle.load(pickle_in)
 
