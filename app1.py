@@ -92,9 +92,9 @@ def main():
        result=predict_note_authentication(Age,Weight,Height,BMI,Blood_Group,Pulse_rate,RR,Hb,Cycle,Cycle_length,Marraige_Status,Pregnant,No_of_aborptions,I_beta_HCG,II_beta_HCG,FSH,LH,FSH_LH_ratio,Hip,Waist,Waist_Hip_Ratio,TSH,AMH,PRL,Vit_D3,PRG,RBS,Weight_gain,hair_growth,Skin_darkening,Hair_loss,Pimples,Fast_food,Reg_Exercise,BP_Systolic,BP_Diastolic,Follicle_No_L,Follicle_No_R,Avg_F_size_L,Avg_F_size_R,Endometrium)
     st.success('The output is {}'.format(result))
     if st.button("About Prediction"):
-       if(result=='[0]'):
+       if(result[0]==0):
          st.text("You will not suffer with PCOS")
-       elif(result=='[1]'):
+       elif(result[1]==1):
          st.text("You will suffer with PCOS")
        else:
          st.text("Lets Predict")
