@@ -93,11 +93,11 @@ def main():
     st.success('The output is {}'.format(result))
     if st.button("About Prediction"):
         if(result=='[0]'):
-	   st.text("You will not suffer with PCOS")
+	  st.text("You will not suffer with PCOS")
         elif(result=='[1]'):
-           st.text(You will suffer with PCOS")
+          st.text(You will suffer with PCOS")
 	else:
-           st.text("Lets Predict")
+          st.text("Lets Predict")
 
 if __name__=='__main__':
     main()
